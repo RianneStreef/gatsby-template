@@ -1,4 +1,4 @@
-const intakeInfo = {
+export const intakeInfo = {
   companyName: "Template",
   companyAddress: "Template Street",
   domainName: "www.template.com",
@@ -9,5 +9,3 @@ const intakeInfo = {
 
   taxNumber: "1313",
 };
-
-export default intakeInfo;
