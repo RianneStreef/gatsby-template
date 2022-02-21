@@ -57,7 +57,7 @@ const LegalPage = () => {
         <p>
           Ce site est normalement accessible à tout moment aux utilisateurs. Une
           interruption pour raison de maintenance technique peut être toutefois
-          décidée par The Fundamental Frequency , qui s’efforcera alors de
+          décidée par {intakeInfo.companyName} , qui s’efforcera alors de
           communiquer préalablement aux utilisateurs les dates et heures de
           l’intervention.
         </p>
@@ -75,7 +75,7 @@ const LegalPage = () => {
           activités de la société.
         </p>
         <p>
-          The Fundamental Frequency s’efforce de fournir sur le site{" "}
+          {intakeInfo.companyName} s’efforce de fournir sur le site{" "}
           <a href={intakeInfo.domainName}>{intakeInfo.domainName}</a> des
           informations aussi précises que possible. Toutefois, il ne pourra être
           tenue responsable des omissions, des inexactitudes et des carences
@@ -101,7 +101,7 @@ const LegalPage = () => {
         </p>
         <h3>5. Propriété intellectuelle et contrefaçons.</h3>
         <p>
-          The Fundamental Frequency est propriétaire des droits de propriété
+          {intakeInfo.companyName} est propriétaire des droits de propriété
           intellectuelle ou détient les droits d’usage sur tous les éléments
           accessibles sur le site, notamment les textes, images, graphismes,
           logo, icônes, sons, logiciels.
@@ -110,7 +110,7 @@ const LegalPage = () => {
           Toute reproduction, représentation, modification, publication,
           adaptation de tout ou partie des éléments du site, quel que soit le
           moyen ou le procédé utilisé, est interdite, sauf autorisation écrite
-          préalable de : The Fundamental Frequency.
+          préalable de : {intakeInfo.companyName}.
         </p>
         <p>
           Toute exploitation non autorisée du site ou de l’un quelconque des
@@ -120,27 +120,27 @@ const LegalPage = () => {
         </p>
         <h3>6. Limitations de responsabilité.</h3>
         <p>
-          The Fundamental Frequency ne pourra être tenue responsable des
-          dommages directs et indirects causés au matériel de l’utilisateur,
-          lors de l’accès au site {intakeInfo.domainName} et résultant soit de
+          {intakeInfo.companyName} ne pourra être tenue responsable des dommages
+          directs et indirects causés au matériel de l’utilisateur, lors de
+          l’accès au site {intakeInfo.domainName} et résultant soit de
           l’utilisation d’un matériel ne répondant pas aux spécifications
           indiquées au point 4, soit de l’apparition d’un bug ou d’une
           incompatibilité.
         </p>
         <p>
-          The Fundamental Frequency ne pourra également être tenue responsable
+          {intakeInfo.companyName} ne pourra également être tenue responsable
           des dommages indirects (tels par exemple qu’une perte de marché ou
           perte d’une chance) consécutifs à l’utilisation du site{" "}
           <a href={intakeInfo.domainName}>{intakeInfo.domainName}</a>.
         </p>
         <p>
           Des espaces interactifs (possibilité de poser des questions dans
-          l’espace contact) sont à la disposition des utilisateurs. The
-          Fundamental Frequency réserve le droit de supprimer, sans mise en
+          l’espace contact) sont à la disposition des utilisateurs.{" "}
+          {intakeInfo.companyName} réserve le droit de supprimer, sans mise en
           demeure préalable, tout contenu déposé dans cet espace qui
           contreviendrait à la législation applicable en France, en particulier
           aux dispositions relatives à la protection des données. Le cas
-          échéant, The Fundamental Frequency se réserve également la possibilité
+          échéant, {intakeInfo.companyName} se réserve également la possibilité
           de mettre en cause la responsabilité civile et/ou pénale de
           l’utilisateur, notamment en cas de message à caractère raciste,
           injurieux, diffamant, ou pornographique, quel que soit le support
@@ -164,7 +164,7 @@ const LegalPage = () => {
         </p>
         <p>
           {" "}
-          En tout état de cause The Fundamental Frequency ne collecte des
+          En tout état de cause {intakeInfo.companyName} ne collecte des
           informations personnelles relatives à l&lsquo;utilisateur que pour le
           besoin de certains services proposés par le site{" "}
           <a href={intakeInfo.domainName}>{intakeInfo.domainName}</a>.
@@ -188,7 +188,7 @@ const LegalPage = () => {
           <a href={intakeInfo.domainName}>{intakeInfo.domainName}</a>{" "}
           n&lsquo;est publiée à l&lsquo;insu de l&lsquo;utilisateur, échangée,
           transférée, cédée ou vendue sur un support quelconque à des tiers.
-          Seule l&lsquo;hypothèse du rachat de The Fundamental Frequency et de
+          Seule l&lsquo;hypothèse du rachat de {intakeInfo.companyName} et de
           ses droits permettrait la transmission des dites informations à
           l&lsquo;éventuel acquéreur qui serait à son tour tenu de la même
           obligation de conservation et de modification des données vis à vis de
@@ -204,10 +204,10 @@ const LegalPage = () => {
         <p>
           Le site <a href={intakeInfo.domainName}>{intakeInfo.domainName}</a>{" "}
           contient un certain nombre de liens hypertextes vers d’autres sites,
-          mis en place avec l’autorisation de The Fundamental Frequency.
-          Cependant, The Fundamental Frequency n’a pas la possibilité de
-          vérifier le contenu des sites ainsi visités, et n’assumera en
-          conséquence aucune responsabilité de ce fait.
+          mis en place avec l’autorisation de {intakeInfo.companyName}.
+          Cependant, {intakeInfo.companyName} n’a pas la possibilité de vérifier
+          le contenu des sites ainsi visités, et n’assumera en conséquence
+          aucune responsabilité de ce fait.
         </p>
         <p>
           La navigation sur le site{" "}

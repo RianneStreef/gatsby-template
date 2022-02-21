@@ -2,6 +2,7 @@ const intakeInfo = {
   companyName: "Template",
   companyAddress: "Template Street",
   domainName: "www.template.com",
+  contactEmail: "",
 
   siteName: "Template site",
   highlightColor: "#ff00ff",
