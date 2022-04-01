@@ -7,6 +7,7 @@ import logo from "../images/icon.png";
 
 import flagEn from "../images/icon-en.png";
 import flagFr from "../images/icon-fr.png";
+import flagNl from "../images/icon-nl.png";
 
 import { content } from "../content/languages";
 
@@ -53,6 +54,13 @@ const Header = (props) => {
               onClick={() => handleSetLanguage("french")}
               className={`flag ${
                 languageToUse.language === "french" ? "opaque" : "fade"
+              } `}
+            />
+            <img
+              src={flagNl}
+              onClick={() => handleSetLanguage("dutch")}
+              className={`flag ${
+                languageToUse.language === "dutch" ? "opaque" : "fade"
               } `}
             />
           </div>
