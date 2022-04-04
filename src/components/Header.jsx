@@ -21,9 +21,9 @@ const Header = (props) => {
     localStorage.setItem("languageInStorage", language);
   }
 
-  language === "english"
-    ? (languageToUse = content.english)
-    : (languageToUse = content.french);
+  language === "english" ? (languageToUse = content.english) : null;
+  language === "french" ? (languageToUse = content.french) : null;
+  language === "dutch" ? (languageToUse = content.dutch) : null;
   return (
     <div className="header">
       <div className="hidden-desktop">
@@ -41,28 +41,46 @@ const Header = (props) => {
         </li>
 
         <li>
-          <div className="set-language-footer">
-            <img
-              src={flagEn}
+          <div className="set-language">
+            <button
               onClick={() => handleSetLanguage("english")}
-              className={`flag ${
-                languageToUse.language === "english" ? "opaque" : "fade"
-              } `}
-            />
-            <img
-              src={flagFr}
+              onKeyPress={() => handleSetLanguage("english")}
+              className="invisible-button"
+            >
+              <img
+                src={flagEn}
+                alt="english"
+                className={`flag ${
+                  languageToUse.language === "english" ? "opaque" : "fade"
+                } `}
+              />
+            </button>
+            <button
               onClick={() => handleSetLanguage("french")}
-              className={`flag ${
-                languageToUse.language === "french" ? "opaque" : "fade"
-              } `}
-            />
-            <img
-              src={flagNl}
+              onKeyPress={() => handleSetLanguage("french")}
+              className="invisible-button"
+            >
+              <img
+                src={flagFr}
+                alt="français"
+                className={`flag ${
+                  languageToUse.language === "french" ? "opaque" : "fade"
+                } `}
+              />
+            </button>
+            <button
               onClick={() => handleSetLanguage("dutch")}
-              className={`flag ${
-                languageToUse.language === "dutch" ? "opaque" : "fade"
-              } `}
-            />
+              onKeyPress={() => handleSetLanguage("dutch")}
+              className="invisible-button"
+            >
+              <img
+                src={flagNl}
+                alt="nederlands"
+                className={`flag ${
+                  languageToUse.language === "dutch" ? "opaque" : "fade"
+                } `}
+              />
+            </button>
           </div>
         </li>
       </ul>

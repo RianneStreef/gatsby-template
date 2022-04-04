@@ -47,6 +47,13 @@ h3 {
   opacity: 50%;
 }
 
+.invisible-button {
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  margin: 10px;
+}
+
 .header-placeholder {
   height: 80px;
 }
