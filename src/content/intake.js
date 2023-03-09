@@ -8,6 +8,9 @@ const intakeInfo = {
   highlightColor: "#ff00ff",
 
   taxNumber: "1313",
+
+  location: "Template City",
+  mainActivity: "Making templates",
 };
 
 export default intakeInfo;
